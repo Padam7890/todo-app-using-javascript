@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.container {
+  max-width: 900px;
+  width: fit-content;
+  max-height: fit-content;
+  display: flex;
+  background-color: antiquewhite;
+  flex-direction: column;
+  padding-left: 40px;
+  margin: 10px auto;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.todo h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: white;
+  padding: 15px;
+  font-weight: 14px;
+  border-radius: 20px;
+}
+
+.button {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+#text {
+  width: 300px;
+}
+
+input[type="text"]:focus {
+  border: 1px solid green;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+}
+
+.list {
+  margin-top: 20px;
+}
+
+.list ul {
+  list-style: none;
+}
+
+.list ul li {
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+.list h3 {
+  margin-top: 20px;
+}
+
+li::before {
+  content: "";
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  margin: 10px 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgbwa(0, 0, 0, 0.1);
+  /* Removed display: flex; */
+  align-items: center;
+}
+
+.task-checkbox {
+  margin-right: 10px;
+}
+.checked {
+  text-decoration: line-through;
+}
+
+.completed {
+  color: red;
+}
+
+.delete {
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.edit {
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.action-buttons {
+  margin-left: 90px;
+  display: inline-flex;
+  gap: 10px;
+}

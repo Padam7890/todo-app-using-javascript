@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo">
+        <h3>Todo Apps</h3>
+        <div class="input">
+          <input id="text" type="textestt" placeholder="type a todo lists" />
+          <input
+            class="button"
+            onclick="addTask()"
+            type="submit"
+            value="Add Task"
+          />
+        </div>
+      </div>
+      <div class="list">
+        <h3 id="task_text">Task</h3>
+        <ul id="lists" class="lists"></ul>
+      </div>
+    </div>
+
+    <script src="advancedTodoScript.js"></script>
+  </body>
+</html>
